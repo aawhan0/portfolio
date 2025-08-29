@@ -1,7 +1,16 @@
 import React from 'react'
+import Navbar from './sections/Navbar'
 
 const App = () => {
-  return <div className='text-3xl font-bold underline'>App</div>
+  return <div className='container mx-auto max-w-7xl'>
+    <Navbar></Navbar>
+      {/* hero */}
+      {/* about */}
+      {/* projects */}
+      {/* experience */}
+      {/* contact */}
+      {/* footer */}
+    </div>
 }
 
 export default App
