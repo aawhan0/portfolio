@@ -1,1 +1,3 @@
 learned about the motion library, used to animate div components. using it in navbar.jsx
+
+now im gonna use an ui component from aceternity, called flipword.
