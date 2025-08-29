@@ -1,0 +1,1 @@
+learned about the motion library, used to animate div components. using it in navbar.jsx
