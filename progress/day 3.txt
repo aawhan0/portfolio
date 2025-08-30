@@ -1,4 +1,8 @@
 now that i am done with making the hero section parallax background, its time to use UseScroll on it, for a smooth damping scroll effect.
 
 - Importing the 3d element.
-have to install some libraries: three @react-three/fibre
+have to install some libraries: three 
+@react-three/fiber
+@react-three/drei
+react-responsive
+maath
