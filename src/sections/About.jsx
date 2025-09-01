@@ -26,6 +26,7 @@ const About = () => {
                     <p className="flex items-end text-5xl text-gray-500">
                         CODE IS CRAFT
                     </p>
+                    <Card/>
                 </div>
             </div>
             {/* {Grid 3} */}
