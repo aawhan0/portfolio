@@ -1,3 +1,5 @@
+import Card from "../components/Card"
+
 const About = () => {
   return (
     <section className="c-space section-spacing">
@@ -26,7 +28,22 @@ const About = () => {
                     <p className="flex items-end text-5xl text-gray-500">
                         CODE IS CRAFT
                     </p>
-                    <Card/>
+                    <Card 
+                    style={{ rotate: "75deg", top:"30%", left:"20%"}}
+                    text="GRASP"
+                    />
+                    <Card
+                    style={{ rotate: "-30deg", top:"60%", left:"45%"}}
+                    text="SOLID"
+                    />
+                    <Card
+                    style={{ rotate: "90deg", top:"30%", left:"70%"}}
+                    text="Design Principles"
+                    />
+                    <Card
+                    style={{ rotate: "-45deg", top:"55%", left:"0%"}}
+                    text="Design Patter"
+                    />
                 </div>
             </div>
             {/* {Grid 3} */}
