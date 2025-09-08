@@ -8,6 +8,9 @@ const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
       <SplashCursor /> {/* Cursor ripple effect applied globally */}
+        <div className="container mx-auto max-w-7xl" style={{ position: 'relative', zIndex: 0 }}>
+          {/* Your cards and page content here */}
+        </div>
       <Navbar />
       <Hero />
       <About />
