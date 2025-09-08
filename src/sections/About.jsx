@@ -3,6 +3,10 @@ import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import javascriptLogo from '../assets/logos/javascript.svg';
+import dotnetLogo from '../assets/logos/dotnet-pink.png';
+import blazorLogo from '../assets/logos/blazor-pink.png';
+
 
 const About = () => {
   const grid2Container = useRef();
@@ -59,21 +63,9 @@ const About = () => {
               text="Components"
               containerRef={grid2Container}
             />
-            <Card
-              style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
-              containerRef={grid2Container}
-            />
+            <Card style={{ rotate: "30deg", top: "70%", left: "70%" }} image={javascriptLogo} containerRef={grid2Container} />
+            <Card style={{ rotate: "-45deg", top: "70%", left: "25%" }} image={dotnetLogo} containerRef={grid2Container} />
+            <Card style={{ rotate: "-45deg", top: "5%", left: "10%" }} image={blazorLogo} containerRef={grid2Container} />
           </div>
         </div>
         {/* Grid 3 */}
