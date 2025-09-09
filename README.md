@@ -67,6 +67,3 @@ Feel free to reach out via:
 ***
 
 Thank you for visiting my portfolio! I hope you find the projects inspiring and that they demonstrate my skills effectively.
-[6](https://www.youtube.com/watch?v=CykufIPK_6o)
-[7](https://www.geeksforgeeks.org/blogs/how-to-build-a-awesome-github-developer-portfolio/)
-[8](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/best-practices-for-projects)
