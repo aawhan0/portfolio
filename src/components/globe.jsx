@@ -7,16 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 const MOVEMENT_DAMPING = 1400;
 
-// India longitude (positive = east)
-const INDIA_LONGITUDE = 78.9629;
-const INDIA_LONGITUDE_RAD = INDIA_LONGITUDE * Math.PI / 180;
-const FOCUS_RANGE = 0.2; // radians
-
-const ZOOMED_SCALE = 1.2; // desired zoom value
-const NORMAL_SCALE = 1.0; // default
-const ZOOM_SPEED = 0.07;  // how quickly scale transitions
-
-const SPIN_SPEED = 0.004; // much slower spin
+const SPIN_SPEED = 0.004; // slow spin speed
 
 const GLOBE_CONFIG = {
   width: 800,
@@ -32,7 +23,7 @@ const GLOBE_CONFIG = {
   markerColor: [1, 1, 1],
   glowColor: [1, 1, 1],
   markers: [
-    { location: [20.5937, 78.9629], size: 0.15, color: [0, 1, 0] }, // India (highlighted green)
+    { location: [20.5937, 78.9629], size: 0.15, color: [0, 1, 0] },
     { location: [14.5995, 120.9842], size: 0.03 },
     { location: [19.076, 72.8777], size: 0.1 },
     { location: [23.8103, 90.4125], size: 0.05 },
@@ -46,18 +37,11 @@ const GLOBE_CONFIG = {
   ],
 };
 
-function lerp(start, end, amt) {
-  return (1 - amt) * start + amt * end;
-}
-
 export function Globe({ className, config = GLOBE_CONFIG }) {
   let phi = 0;
   let width = 0;
   const canvasRef = useRef(null);
   const pointerInteracting = useRef(null);
-
-  // Persist current scale across renders
-  const scaleRef = useRef(NORMAL_SCALE);
 
   const r = useMotionValue(0);
   const rs = useSpring(r, {
@@ -95,31 +79,22 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
       width: width * 2,
       height: width * 2,
       onRender: (state) => {
-        if (!pointerInteracting.current) {
-          phi += SPIN_SPEED; // continuous slow spin
-        }
-
+        phi += SPIN_SPEED; // continuous slow spin
         state.phi = phi + rs.get();
 
         state.width = width * 2;
         state.height = width * 2;
 
-        // Normalize longitude between 0 and 2*PI
-        const normalizedLng = (state.phi % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
-
-        // Compute shortest angular difference considering wrap-around
-        let lngDiff = Math.abs(normalizedLng - INDIA_LONGITUDE_RAD);
-        if (lngDiff > Math.PI) lngDiff = 2 * Math.PI - lngDiff;
-
-        const inFocus = lngDiff < FOCUS_RANGE;
-        const targetScale = inFocus ? ZOOMED_SCALE : NORMAL_SCALE;
-
-        scaleRef.current = lerp(scaleRef.current, targetScale, ZOOM_SPEED);
-        state.scale = scaleRef.current;
+        // No zoom or glow changes - keep base values
+        state.scale = 1.0;
+        state.glowColor = [1, 1, 1];
       },
     });
 
-    setTimeout(() => (canvasRef.current.style.opacity = "1"), 0);
+    setTimeout(() => {
+      if (canvasRef.current) canvasRef.current.style.opacity = "1";
+    }, 0);
+
     return () => {
       globe.destroy();
       window.removeEventListener("resize", onResize);
