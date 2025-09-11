@@ -57,14 +57,14 @@ export const myProjects = [
     id: 3,
     title: "PuppetGPT",
     description:
-      "An AI chatbot that answers questions directly from your uploaded PDF using Retrieval-Augmented Generation—no web search needed. Built with Streamlit, LangChain, LLaMA 3 (Groq), and HuggingFace embeddings.",
+      "An AI chatbot that answers questions directly from your uploaded PDF using Retrieval-Augmented Generation—no web search needed.",
     subDescription: [
       "Allows users to upload any PDF and ask questions based only on its content.",
       "Answers are generated exclusively from your document—no internet search involved.",
-      "Employs Retrieval-Augmented Generation with HuggingFace embeddings and ChromaDB for fast, accurate context lookup.",
+      // "Employs Retrieval-Augmented Generation with HuggingFace embeddings and ChromaDB for fast, accurate context lookup.",
       "Runs Groq's LLaMA 3 for advanced language modeling and speedy response times.",
       "Designed with a clean, interactive Streamlit UI and a customizable chatbot persona.",
-      "Setup is quick: add your Groq API key and start conversing with any PDF in seconds."
+      // "Setup is quick: add your Groq API key and start conversing with any PDF in seconds."
     ],
     href: "https://github.com/aawhan0/PuppetGPT",
     logo: "",
@@ -153,8 +153,8 @@ export const myProjects = [
       "Recognizes voice commands like play, pause, resume, skip, stop, and more.",
       "Provides real-time text-to-speech feedback confirming commands and current song.",
       "Displays song metadata and album art using Mutagen and Tkinter libraries.",
-      "Modular design makes code extensible and easy to maintain.",
-      "Future plans include GUI dashboard and integration with online music APIs.",
+      // "Modular design makes code extensible and easy to maintain.",
+      // "Future plans include GUI dashboard and integration with online music APIs.",
     ],
     href: "https://github.com/aawhan0/voice-controlled-music-player",
     logo: "",
@@ -162,7 +162,7 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "python",
+        name: "Python",
         path: "/assets/logos/python.svg",
       },
     ],
