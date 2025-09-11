@@ -75,16 +75,18 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Underbelly Prototype",
+    title: "PuppetGPT",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "An AI chatbot that answers questions directly from your uploaded PDF using Retrieval-Augmented Generation—no web search needed. Built with Streamlit, LangChain, LLaMA 3 (Groq), and HuggingFace embeddings.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Allows users to upload any PDF and ask questions based only on its content.",
+      "Answers are generated exclusively from your document—no internet search involved.",
+      "Employs Retrieval-Augmented Generation with HuggingFace embeddings and ChromaDB for fast, accurate context lookup.",
+      "Runs Groq's LLaMA 3 for advanced language modeling and speedy response times.",
+      "Designed with a clean, interactive Streamlit UI and a customizable chatbot persona.",
+      "Setup is quick: add your Groq API key and start conversing with any PDF in seconds."
     ],
-    href: "",
+    href: "https://github.com/aawhan0/PuppetGPT",
     logo: "",
     image: "/assets/projects/blazor-app.jpg",
     tags: [
@@ -138,17 +140,8 @@ export const myProjects = [
         name: "OpenCV",
         path: "/assets/logos/opencv.svg",
       },
-      {
-        id: 3,
-        name: "MediaPipe",
-        path: "/assets/logos/mediapipe.svg",
-      },
-      {
-        id: 4,
-        name: "PyAutoGUI",
-        path: "/assets/logos/pyautogui.svg",
-      },
     ],
+  },
 
   {
     id: 5,
@@ -169,23 +162,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        name: "python",
+        path: "/assets/logos/python.svg",
       },
     ],
   },
