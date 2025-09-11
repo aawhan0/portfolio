@@ -11,10 +11,12 @@ const Project = ({ title, description, subdescription, href, image, tags }) => {
           ))}
         </div>
         <button className='flex items-center gap-1 cursor-pointer hover-animation' onClick={() => window.open(href, '_blank')}>
+          Read More
           <img src="assets/arrow-right.svg" className="w-5" alt="arrow icon" />
         </button>
       </div>
-      <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'></div>
+      <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
+      <ProjectDetails title={title} description={description} subDescription= {subdescription} image={image} tags={tags} href= {href}/>
     </>
   )
 }
