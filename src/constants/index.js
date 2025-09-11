@@ -3,73 +3,53 @@ export const myProjects = [
     id: 1,
     title: "Fazion Gaming",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A modern gaming e-commerce website showcasing a variety of gaming products available for purchase.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Designed with a clean, contemporary UI focusing on gaming enthusiasts.",
+      "Showcases wide range of gaming merchandise with intuitive navigation.",
+      "Emphasizes product visibility and streamlined purchase flow.",
+      "Created using Figma with attention to responsive and engaging design.",
     ],
-    href: "",
+    href: "https://www.figma.com/proto/NQofJSZAYGyxIbKNFR3xoA/FazionGaming.com?page-id=0%3A1&type=design&node-id=15-11&viewport=-583%2C390%2C0.52&scaling=scale-down&starting-point-node-id=15%3A11",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/fazion-gaming.jpg",
     tags: [
-      {
-        id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+        {
+          id: 1,
+          name: "Figma",
+          path: "/assets/logos/figma.svg",
+        },
+        {
+          id: 2,
+          name: "UI/UX Design",
+          path: "/assets/logos/uiux.svg",
+        },
     ],
   },
   {
     id: 2,
     title: "Nimbus App",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A gamified, rewards-based productivity platform to connect students across universities, developed in 24 hours for a UX hackathon at VIT Bhopal.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Incorporates features like leaderboard, daily to-do lists, and mini AI-powered weather/what-to-do suggestions.",
+      "Focuses on engagement and motivation through gamification and social connectivity.",
+      "Designed rapidly with Figma, highlighting usability and visual appeal.",
+      "Aims to increase productivity while fostering a community among students.",
     ],
-    href: "",
+    href: "https://www.linkedin.com/posts/aawhanvyas_uxdesign-gamification-productdesign-activity-7335197521255755776-wbsb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADaRDxMBlgfFkMQLV1Rpkmjb4yG3lBUiSjs",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/nimbus-app.jpg",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Figma",
+        path: "/assets/logos/figma.svg",
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "UI/UX Design",
+        path: "/assets/logos/uiux.svg",
       },
     ],
   },
@@ -88,27 +68,47 @@ export const myProjects = [
     ],
     href: "https://github.com/aawhan0/PuppetGPT",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/puppetgpt.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "dotenv",
+        path: "/assets/logos/dotenv.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "ChromaDB",
+        path: "/assets/logos/chroma.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Groq",
+        path: "/assets/logos/groq.svg",
+      },
+      {
+        id: 5,
+        name: "LLaMA 3",
+        path: "/assets/logos/lama.svg",
+      },
+      {
+        id: 6,
+        name: "LangChain",
+        path: "/assets/logos/langchain.svg",
+      },
+      {
+        id: 7,
+        name: "StreamLit",
+        path: "/assets/logos/streamlit.svg",
+      },
+      {
+        id: 8,
+        name: "HuggingFace",
+        path: "/assets/logos/huggingface.svg",
       },
     ],
   },
@@ -167,44 +167,7 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   id: 6,
-  //   title: "Online Learning Platform",
-  //   description:
-  //     "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-  //   subDescription: [
-  //     "Built using Blazor WebAssembly for a seamless SPA experience.",
-  //     "Implemented video streaming with Azure Media Services.",
-  //     "Added a quiz system with dynamic question generation and real-time grading.",
-  //     "Integrated Stripe API for secure payment processing.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/elearning.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "Blazor",
-  //       path: "/assets/logos/blazor.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "Azure",
-  //       path: "/assets/logos/azure.svg",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "Stripe",
-  //       path: "/assets/logos/stripe.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "TailwindCSS",
-  //       path: "/assets/logos/tailwindcss.svg",
-  //     },
-  //   ],
-  // },
-];
+  ];
 
 export const mySocials = [
   {
